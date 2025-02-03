@@ -1,12 +1,13 @@
 # %%
 !pip install earthengine-api google-auth
+!pip install pytest
+
 
 # %% Importing Earth Engine
 import ee
 import google.auth
 # %%
 import os
-
 
 # %%
 
@@ -15,11 +16,9 @@ if not cred_path:
     raise ValueError("Set GOOGLE_APPLICATION_CREDENTIALS env variable!")
 
 # %%
-
-print(os.path.exists("ee-project-mentor-jayasree-8b1f7ae43ce4.json"))  # Should return True if the file exists
-
-# %%
-SERVICE_ACCOUNT = 'pulsar-debian@ee-project-mentor-jayasree.iam.gserviceaccount.com'
+SERVICE_ACCOUNT = os.getenv("GOOGLE_APPLICATION_EMAIL")
+if not SERVICE_ACCOUNT:
+    raise ValueError("Set GOOGLE_APPLICATION_EMAIL env variable!")
 CREDENTIALS = ee.ServiceAccountCredentials(SERVICE_ACCOUNT, cred_path)
 
 # %%
