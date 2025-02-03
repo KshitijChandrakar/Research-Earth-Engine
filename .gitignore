@@ -1,1 +1,75 @@
 ee-project-mentor-jayasree-8b1f7ae43ce4.json
+
+# Byte-compiled / optimized / compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environment directories
+env/
+venv/
+ENV/
+.venv/
+.pip/
+
+# Distribution / packaging
+*.egg
+*.egg-info/
+dist/
+build/
+*.wheel
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Test coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.*
+.cache
+
+# PyInstaller
+*.manifest
+*.spec
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Temporary files
+*.tmp
+*.bak
+*.old
+*.orig
+.DS_Store
+Thumbs.db
+
+# Python Venv
+__pycache__
+ipynb_checkpoints
+bin
+include
+lib
+lib64
+share
